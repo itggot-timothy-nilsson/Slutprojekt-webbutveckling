@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(black, #040610);
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+
+header {
+    grid-row: span 2;
+    grid-column: span 7;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    background: linear-gradient(yellow, black);
+}
+
+.logo {
+    grid-row: span 1;
+    grid-column: 2/6;
+}
