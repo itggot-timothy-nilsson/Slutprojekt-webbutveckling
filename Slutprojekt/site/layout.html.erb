@@ -12,7 +12,17 @@
         <div class="logo">
             <img src="img/logo.png" alt="Cyberpunk2077" width="250" height="60">
         </div>
+        <div class="menu"></div>
+            <div class="fade-layer"></div>
+            <div class="open" onclick="toggleMenu()">
+                <img src="img/menu.png" alt="menu">
+            </div>
+            <div class="close" onclick="toggleMenu()">
+                <img src="img/close.png" alt="menu">
+            </div>
+        </div>
     </header>
     <%= yield %>
+    <script src="js/menu.js"></script>
 </body>
 </html>
