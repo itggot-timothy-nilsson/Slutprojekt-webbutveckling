@@ -1,0 +1,27 @@
+.container_news {
+    grid-row: 4/25;
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-image: url("../img/background.jpg")
+}
+
+
+.news {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    font-family: 'Kill The Noise';
+    color: #D9E531;
+    font-size: 30px;
+    margin-top: 0px;
+    border-bottom: 1px solid #D9E531;
+    margin: 20px;
+}
+
+.whitebackground {
+    grid-row: 2/6;
+    grid-column: 2/7;
+    background-color: black;
+    border-radius: 20px;
+}
