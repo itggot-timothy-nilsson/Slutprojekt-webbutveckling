@@ -9,17 +9,34 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Cyberpunk2077" width="250" height="60">
+        <div class="logo_desktop">
+            <a href="index.html">
+                <img src="img/logo.png" alt="">
+            </a> 
         </div>
-        <div class="menu">
+        <div class="logomobile">
+        </div>
+        <div class="menu_desktop">
+            <a href="media.html" class="media">
+                <h1>
+                    Media
+                </h1>
+            </a>
+            <a href="about.html" class="about">
+                <h1>
+                    About
+                </h1>
+            </a>
+            <a href="news.html" class="news">
+                <h1>
+                    News
+                </h1>
+            </a>
         </div>
             <div class="fade-layer"></div>
             <div class="open" onclick="toggleMenu()">
-                <img src="img/menu.png" alt="menu">
             </div>
             <div class="close" onclick="toggleMenu()">
-                
                 <img src="img/close.png" alt="menu">
                 <ul>
                     <a href="index.html">
@@ -31,15 +48,30 @@
                     <a href="news.html">
                         <li>News</li>
                     </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
                 </ul>
             </div>
         </div>
     </header>
     <div class="container_news">
-    <h1 class="news">
+    <h1 class="news_h1">
         News
     </h1>
-    <div class="whitebackground"></div>
+    
+    <div class="blackblock">
+        <h4 class="date">
+            10/05-2018 Cyberpunk 2077: E3 website confirms CD Projekt Red will exhibit at the show
+        </h4>
+        <img src="img/E3_news.jpg" alt="" class="e3">
+    </div>
+    <div class="blackblock2">
+        <h4 class="date2">
+            01-05-2018 CYBERPUNK 2077: ALL NEWS, TRAILERS, GAMEPLAY, AND RUMORS
+        </h4>
+        <img src="img/CP_news.jpg" alt="" class="CP_news">
+    </div>
 </div>
     <script src="js/menu.js"></script>
 </body>

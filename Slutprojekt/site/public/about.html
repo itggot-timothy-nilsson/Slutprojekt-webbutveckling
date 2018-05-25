@@ -9,17 +9,34 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Cyberpunk2077" width="250" height="60">
+        <div class="logo_desktop">
+            <a href="index.html">
+                <img src="img/logo.png" alt="">
+            </a> 
         </div>
-        <div class="menu">
+        <div class="logomobile">
+        </div>
+        <div class="menu_desktop">
+            <a href="media.html" class="media">
+                <h1>
+                    Media
+                </h1>
+            </a>
+            <a href="about.html" class="about">
+                <h1>
+                    About
+                </h1>
+            </a>
+            <a href="news.html" class="news">
+                <h1>
+                    News
+                </h1>
+            </a>
         </div>
             <div class="fade-layer"></div>
             <div class="open" onclick="toggleMenu()">
-                <img src="img/menu.png" alt="menu">
             </div>
             <div class="close" onclick="toggleMenu()">
-                
                 <img src="img/close.png" alt="menu">
                 <ul>
                     <a href="index.html">
@@ -31,20 +48,31 @@
                     <a href="news.html">
                         <li>News</li>
                     </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
                 </ul>
             </div>
         </div>
     </header>
     <div class="container_about">
-    <h1 class="about">
+    <h1 class="about_h1">
         About
     </h1>
+    <div class="blackblock_about"></div>
     <div class="infotext">
         <p>
             Cyberpunk 2077 is an upcoming role-playing video game developed by CD Projekt Red and published by CD Projekt. Adapted from the tabletop game Cyberpunk 2020, it is set fifty-seven years later in dystopian Night City, California, an open world in which a group known as Edgerunners serve society in eight different roles, which the player is free to choose and customise a character from. Player agency and choice lead to alternate endings.
-
         </p>
     </div>
+    <div class="contact">
+        <p class="contactme">Contact</p>
+        <p class="email">
+            Your Email
+        </p>
+        <input type="text" class="contact_input value="Email">
+    </div>
+    
 </div>
     <script src="js/menu.js"></script>
 </body>

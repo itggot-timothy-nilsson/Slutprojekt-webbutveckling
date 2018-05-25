@@ -1,3 +1,126 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(black, #040610);
+    display: grid;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header {
+    grid-row: 1/4;
+    grid-column: span 7;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+}
+
+.mainpic {
+    display: none;
+}
+
+.whitebackground {
+    display: none;
+}
+
+.container_index {
+    background: url("../img/Background_desktop.jpg");
+    grid-row: 4/25;
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.home {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: center;
+    font-family: 'Kill The Noise';
+    color: #D9E531;
+    font-size: 70px;
+    margin-top: 0px;
+    border-bottom: 1px solid #D9E531;
+
+}
+
+.aboutext {
+    grid-column: 1/4;
+    grid-row: 2/6;
+    color: #D9E531;
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: sans-serif, Montserrat-regular;
+}
+
+.open {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.logomobile {
+    display: none;
+}
+
+.menu_desktop {
+    grid-row: 1/2;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.menu_desktop a {
+    text-decoration: none;
+}
+
+.menu_desktop h1 {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: center;
+    font-family: 'Kill The Noise';
+    color: #D9E531;
+    font-size: 70px;
+    margin-top: 0px;
+    border-bottom: 1px solid #D9E531;
+
+}
+
+.media {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.about {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.news {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+@media only screen and (max-width: 415px) and (max-height: 737px) {
+
+.menu_desktop {
+    display: none;
+}
+
+.logo_desktop {
+    display: none;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -21,13 +144,22 @@ header {
 }
 
 .open {
+    display: block;
     text-align: left;
     grid-row: 1/2;
     grid-column: 1/2;
+    width: 48px; height: 48px;
+    background: url('../img/css_sprites.png') -78px -95px;
 }
-.logo {
+
+.logomobile {
+    display: block;
     grid-row: 1/2;
     grid-column: 2/6;
+    width: 250px;
+    height: 60px;
+    width: 250px; height: 65px;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 
 .menu {
@@ -39,7 +171,7 @@ header {
 
 .close {
     position: absolute;
-    display: block;
+    display: none;
     transform: translateX(-100%);
     text-align: left;
     transition: transform ease-out 0.5s;
@@ -47,6 +179,7 @@ header {
     height: 100vh;
     background: white;
 }
+
 
 .fade-layer{
     display: none;
@@ -98,18 +231,30 @@ header {
     margin-right: auto;
 }
 
-.abouttext {
+.aboutext {
     font-family: sans-serif, Montserrat-Regular;
     grid-row: 2/6;
     grid-column: 2/7;
     color: #D9E531;
     font-size: 14px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .whitebackground {
-    grid-row: 2/6;
+    grid-row: 2/4;
     grid-column: 2/7;
     background-color: black;
     border-radius: 20px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+li {
+    text-decoration: none;
+    font-family: sans-serif, Montserrat-Regular;
+    
+}
 }
